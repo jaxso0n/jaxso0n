@@ -1522,7 +1522,7 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendmessage?chat_id=' .. msg.sender_user_id_ .. '&text=' ..token) 
 send(msg.chat_id_, msg.id_,' ') 
 end
-if text == 'حمو مبرمج السورس' and DevSoFi(msg) then
+if text == 'مبرمج السورس' and DevSoFi(msg) then
 database:del(bot_id..'Srt:Bot') 
 local Text = [[ 
 ↝المبرمج جاكسون لو حابب تتواصل معاه
@@ -3209,21 +3209,21 @@ end
 end,nil)   
 end
 
-if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == '"' then
-local Text =[[
-╭♲━┅⟞⟦[♲ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐎𝐋𝐈𝐕𝐄𝐑♲](http://t.me/J_ax_s_o_N)⟧⟝┉━♲╮
-
-    [⟦𝐖𝐄𝐋𝐂𝐎𝐌𝐄 𝐓𝐎 ♲ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐎𝐋𝐈𝐕𝐄𝐑♲⟧](http://t.me/J_ax_s_o_N)
-
-╰♲━┅⟞⟦[♲ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐎𝐋𝐈𝐕𝐄𝐑♲](http://t.me/J_ax_s_o_N)⟧⟝┉━♲╯
+if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
+local msg_id = msg.id_/2097152/0.5
+local Text = [[
+◍ ᴛʜᴇ ʙᴇѕᴛ ᴇɢ ʟụᴀ ѕᴏụʀᴄᴇ ɪɴ ᴛᴇʟᴇɢʀᴀᴍ
+🌖
+◍ ᴘᴍ ᴍᴇ ᴛᴏ ᴍᴀᴋᴇ ʏᴏụʀ ᴏᴡɴ ᴏɴᴇ 🐾
+...
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = ' ♲ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌♲', url = "https://t.me/J_X_S1"}},
-{{text = '♲ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐎𝐋𝐈𝐕𝐄𝐑♲', url = "https://t.me/J_ax_s_o_N"}},
+{{text = '  ◍ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌 ',url="t.me/J_X_S1"},{text = ' ◍ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌 ',url="t.me/JA_XS"}},
+{{text = '  ◍ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌 ', url="t.me/J_a_xs_oN "}},
+{{text = '   ◍ M𝚈 𝙲𝙷𝙰𝙽𝙽𝙴𝙻𝚂 𖣌  ', url="t.me/j_1x_q"}},
 }
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/UU_M00N/3798&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendanimation?chat_id=' .. msg.chat_id_ .. '&animation=https://t.me/J_ax_s_o_N/244&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 if text == 'مين نصبلك' or text == 'عايزه بوت' or text == 'عايز بوت' then
@@ -3252,7 +3252,7 @@ keyboard.inline_keyboard = {
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/H1_MA&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/J_X_S1&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 if text == 'الهقر' or text == 'جااااك' or text == 'مطور السورس'  then
@@ -4187,14 +4187,14 @@ end
 if text == 'التواصل'  then
 database:del(bot_id..'Srt:Bot') 
 local Text = [[ 
-[TWL](t.me/Asaliya_1)
+[TWL](t.me/j_1x_q)
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '《𝙻𝚃𝚄𝙰𝚂𝙸𝙻 𝚂𝙾𝚄𝚁𝙲𝙴 》', url="t.me/Asaliya_1"}}, 
+{{text = '《𝙻𝚃𝚄𝙰𝚂𝙸𝙻 𝚂𝙾𝚄𝚁𝙲𝙴 》', url="t.me/j_1x_q"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/DEV_ASALIYA/2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/J_ax_s_o_N/244&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'مميزات'  or text == 'المميزات' then
@@ -15199,7 +15199,7 @@ local List = {
 🇪🇬 - 𝙶𝙼𝙰𝚂 ⟿ #stast 💘.
 🇪🇬 - 𝙸𝙳 𝚂𝚃𝙰 ⟿ #id 💘.  
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-🇪🇬 - 𝗖?? - ↝@J_ax_s_o_N↜ ♲.
+??🇬 - 𝗖?? - ↝@J_ax_s_o_N↜ ♲.
 ]],
 [[
 - 𓏬 𝐔𝐬𝐄𝐫 : #username 𓂅 .
