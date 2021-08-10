@@ -919,11 +919,11 @@ if text == '/start' then
 local bl = 'مرحبا بيك عزيزي العضو اليك الاوامر في الاسفل'
 local keyboard = {
 {'━┅┅┄⟞⟦ مبرمج السورس ⟧⟝┄┉┉━'},
-{'مبرمج السورس ','جاكسون'},
+{'مبرمج السورس '},
 {'♲━┅┄⟞⟦𝐎𝐋𝐈𝐕𝐄𝐑⟧⟝┄┉━♲'},
 {'ثيم','بايو','ايدي'},
 {'♲━┅┄⟞⟦𝐎𝐋𝐈𝐕𝐄𝐑⟧⟝┄┉━♲'},
-{'عايز بوت','التواصل'},
+{'التواصل'},
 {'♲━┅┄⟞⟦𝐎𝐋𝐈𝐕𝐄𝐑⟧⟝┄┉━♲'},
 {'تويت','صراحه'},
 {'♲━┅┄⟞⟦𝐎𝐋𝐈𝐕𝐄𝐑⟧⟝┄┉━♲'},
@@ -933,21 +933,9 @@ local keyboard = {
 {'♲━┅┄⟞⟦𝐎𝐋𝐈𝐕𝐄𝐑⟧⟝┄┉━♲'},
 {'مطور','انا مين'},
 {'♲━┅┄⟞⟦𝐎𝐋𝐈𝐕𝐄𝐑⟧⟝┄┉━♲'},
-{'تعطيل مريم', 'تفعيل مريم',' مريم'},
-{'♲━┅┄⟞⟦𝐎𝐋𝐈𝐕𝐄𝐑⟧⟝┄┉━♲'},
-{'الالعاب'},
-{'♲━┅┄⟞⟦𝐎𝐋𝐈𝐕𝐄𝐑⟧⟝┄┉━♲'},
 {'نسبه جمالي','صورتي'},
 {'♲━┅┄⟞⟦𝐎𝐋𝐈𝐕𝐄𝐑⟧⟝┄┉━♲'},
-{'روايات','حروف بالصور'},
-{'♲━┅┄⟞⟦𝐎𝐋𝐈𝐕𝐄𝐑⟧⟝┄┉━♲'},
-{'لو خيروك بالصور','تويت بالصور'},
-{'♲━┅┄⟞⟦𝐎𝐋𝐈𝐕𝐄𝐑⟧⟝┄┉━♲'},
 {'لو خيروك'},
-{'♲━┅┄⟞⟦𝐎𝐋𝐈𝐕𝐄𝐑⟧⟝┄┉━♲'},
-{'التاريخ','الساعه'},
-{'♲━┅┄⟞⟦𝐎𝐋𝐈𝐕𝐄𝐑⟧⟝┄┉━♲'},
-{'تصميم  اوليفر','غنيلي بفيديو'},
 {'♲━┅┄⟞⟦𝐎𝐋𝐈𝐕𝐄𝐑⟧⟝┄┉━♲'},
 {'سعر التنصيب'},
 {'♲━┅┄⟞⟦𝐎𝐋𝐈𝐕𝐄𝐑⟧⟝┄┉━♲'},
@@ -1075,7 +1063,7 @@ end
 end
 --------------------------------------------------------------------------------------------------------------
 if Chat_Type == 'UserBot' then
-if text == '/start' or text == 'العوده🍂' then  
+if text == '/start' or text == 'العوده♲' then  
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -1086,7 +1074,7 @@ end
 return false
 end
 if DevSoFi(msg) then
-local bl = '☆'
+local bl = '♥'
 local keyboard = {
 {'ضع اسم للبوت','معلومات الكيبورد'},
 {'المطور','الاحصائيات'},
@@ -1322,7 +1310,7 @@ local Text = 'قسم مطورين السورس لدخول الي حسابتهم'
 local Key = {
 {'━┅┅┄⟞⟦ مطورين السورس ⟧⟝┄┉┉━'},
 {'يا سورس','التواصل'},
-{'العوده🍂 '},
+{'العوده♲ '},
 }
 send_inline_key(msg.chat_id_,Text,Key)
 end 
@@ -1334,7 +1322,7 @@ local Key = {
 {'اضف رد متعدد','مسح رد متعدد'},
 {'ضع كليشه ستارت','مسح كليشه ستارت'},
 {'ضع قناة الاشتراك','مسح رساله الاشتراك'},
-{'العوده🍂 '},
+{'العوده♲ '},
 }
 send_inline_key(msg.chat_id_,Text,Key)
 end 
@@ -1346,7 +1334,7 @@ local Key = {
 {'تعطيل التواصل ','تفعيل التواصل '},
 {'تفعيل الاشتراك الاجباري','تعطيل الاشتراك الاجباري'},
 {'تفعيل البوت الخدمي ','تعطيل البوت الخدمي '},
-{'العوده🍂 '},
+{'العوده♲ '},
 }
 send_inline_key(msg.chat_id_,Text,Key)
 end 
@@ -1358,7 +1346,7 @@ local Key = {
 {'الثانوين'},
 {'تنظيف الجروبات ','تنظيف المشتركين'},
 {'تغير رساله الاشتراك ','الاشتراك الاجباري','تغير الاشتراك'},
-{'العوده🍂 '},
+{'العوده♲ '},
 }
 send_inline_key(msg.chat_id_,Text,Key)
 end 
@@ -1367,7 +1355,7 @@ local Text = 'قـسم الاشـتراك يوجد في الاشتراك الا�
 local Key = {
 {'الاشتراك الاجباري'},
 {'تغير رساله الاشتراك ','تغير الاشتراك'},
-{'العوده🍂 '},
+{'العوده♲ '},
 }
 send_inline_key(msg.chat_id_,Text,Key)
 end 
@@ -1377,7 +1365,7 @@ local Key = {
 {'اذاعه ','اذاعه خاص '},
 {'اذاعه بالتثبيت '},
 {'اذاعه بالتوجيه ','اذاعه بالتوجيه خاص '},
-{'العوده🍂 '},
+{'العوده♲ '},
 }
 send_inline_key(msg.chat_id_,Text,Key)
 end 
@@ -3220,8 +3208,8 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '  ◍ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌 ',url="t.me/J_X_S1"},{text = ' ◍ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌 ',url="t.me/JA_XS"}},
-{{text = '  ◍ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌 ', url="t.me/J_a_xs_oN "}},
-{{text = '   ◍ M𝚈 𝙲𝙷𝙰𝙽𝙽𝙴𝙻𝚂 𖣌  ', url="t.me/j_1x_q"}},
+{{text = '  ◍ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌 ', url="t.me/j_1x_q "}},
+{{text = '   ◍ M𝚈 𝙲𝙷𝙰𝙽𝙽𝙴𝙻𝚂 𖣌  ', url="t.me/J_ax_s_o_N"}},
 }
 https.request("https://api.telegram.org/bot"..token..'/sendanimation?chat_id=' .. msg.chat_id_ .. '&animation=https://t.me/J_ax_s_o_N/244&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
@@ -3295,7 +3283,7 @@ keyboard.inline_keyboard = {
 {{text = 'مطورين السورس☎️', url="https://t.me/J_X_S1"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/J_ax_s_o_N&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/J_ax_s_o_N/244&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text=="اذاعه بالتثبيت" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
@@ -3421,7 +3409,7 @@ local TWEET_Msg = {
 "روايتك المفضله ?", 
 "اخر اكله اكلتها", 
 "اخر كتاب قرآته", 
-"ليه تيتو جدع؟ ", 
+"ليه جاكسون جدع ؟ ", 
 "افضل يوم ف حياتك", 
 "ليه مضيفتش كل جهاتك", 
 "حكمتك ف الحياه", 
@@ -4168,7 +4156,7 @@ keyboard.inline_keyboard = {
 {{text = '《♲ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐎𝐋𝐈𝐕𝐄𝐑♲》 ', url="t.me/J_ax_s_o_N"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/J_ax_s_o_N/83/2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/J_ax_s_o_N/244&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == '♲━┅┄⟞⟦𝐎𝐋𝐈𝐕𝐄𝐑⟧⟝┄┉━♲' then
 local Text = [[ 
@@ -4182,7 +4170,7 @@ keyboard.inline_keyboard = {
 {{text = '《♲ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐎𝐋𝐈𝐕𝐄𝐑♲》', url="t.me/J_ax_s_o_N"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/J_ax_s_o_N/84&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/J_ax_s_o_N/244&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == 'التواصل'  then
 database:del(bot_id..'Srt:Bot') 
@@ -4234,7 +4222,7 @@ keyboard.inline_keyboard = {
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendVideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/J_ax_s_o_N/83/6&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendVideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/J_ax_s_o_N/244&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 if text == 'العاب  اوليفر' or text == 'العاب مطوره' or text == 'العاب متطوره' then  
@@ -4273,7 +4261,7 @@ keyboard.inline_keyboard = {
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }  
 local msg_id = msg.id_/2097152/0.5  
-https.request("https://api.telegram.org/bot"..token..'/sendVideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/J_ax_s_o_N/83/6&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendVideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/J_ax_s_o_N/244&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 --------------------------------------------------------------------------------------------------------------
 if text == ("انذار") and tonumber(msg.reply_to_message_id_) ~= 0 and Mod(msg) and not database:get(bot_id..'NightRang:inthar:group'..msg.chat_id_) then
@@ -17105,7 +17093,7 @@ if not my_ph then
 return false  
 end
 if not database:get(bot_id..'lock:add'..msg.chat_id_) then
-local texting = {"لقد فازت ونجوت من العقاب 👻🍂 "}
+local texting = {"لقد فازت ونجوت من العقاب 👻♲ "}
 send(msg.chat_id_, msg.id_, ''..texting[math.random(#texting)]..'')
 end
 end
@@ -17166,7 +17154,7 @@ send(msg.chat_id_, msg.id_,Text)
 end
 if text == 'روابط الحذف' or text == 'رابط  حذف' or text == 'رابط الحذف' then
 local Text = [[
-مواقع  مسح حسابات،🍂
+مواقع  مسح حسابات،♲
 فكر قبل لا تتسرع وتروح
 ]]
 keyboard = {} 
@@ -17181,7 +17169,7 @@ https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. ms
 end
 if text == 'بوت الحذف' or text == 'بوت حذف' or text == 'بوت حذف حسابات' then
 local Text = [[
-بوت  مسح حسابات،🍂
+بوت  مسح حسابات،♲
 فكر قبل لا تتسرع وتروح
 ]]
 keyboard = {} 
