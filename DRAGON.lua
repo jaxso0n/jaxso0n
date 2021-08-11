@@ -1002,7 +1002,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = ' ❨♲•𓆩| ıl★`𝐉. 𝐀. 𝐗. 𝐒. 𝐎. 𝐍´★lı |𓆪•♲❩',url="https://t.me/j_1x_q"}},
+{{text = ' ❨♲•𓆩| ıl♲`𝐉. 𝐀. 𝐗. 𝐒. 𝐎. 𝐍´♲lı |𓆪•♲❩',url="https://t.me/j_1x_q"}},
 {{text = '《♲ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐎𝐋𝐈𝐕𝐄𝐑♲》',url="t.me/J_ax_s_o_N"}},
 }
 local msg_id = msg.id_/2097152/0.5
@@ -1514,7 +1514,7 @@ local Text = [[
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '❨♲•𓆩| ıl★`𝐉. 𝐀. 𝐗. 𝐒. 𝐎. 𝐍´★lı |𓆪•♲❩', url="https://t.me/j_1x_q"}}, 
+{{text = '❨♲•𓆩| ıl♲`𝐉. 𝐀. 𝐗. 𝐒. 𝐎. 𝐍´♲lı |𓆪•♲❩', url="https://t.me/j_1x_q"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -1753,7 +1753,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,' ♲ لا تستطيع استخدام البوت \n ♲  يرجى الاشتراك بالقناه اولا \n ♲  اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,' ♲ لا تستطيع استخدام البوت \n  ♲ يرجى الاشتراك بالقناه اولا \n  ♲ اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -1764,7 +1764,7 @@ send(msg.chat_id_,msg.id_," ♲ عذرا عزيزي المستخدم هاذا م
 return false 
 end      
 database:sadd(bot_id..'Sudo:User', result.id_)
-usertext = '\n ♲ الـعـضو   ⇇['..result.title_..'](t.me/'..(username or 'textchuser')..')'
+usertext = '\n ♲ العضو » ['..result.title_..'](t.me/'..(username or 'J_ax_s_o_N')..')'
 status  = '\n ♲ تم ترقيته مطور'
 texts = usertext..status
 else
@@ -1782,18 +1782,18 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,' ♲ لا تستطيع استخدام البوت \n ♲  يرجى الاشتراك بالقناه اولا \n ♲  اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,' ♲ لا تستطيع استخدام البوت \n  ♲ يرجى الاشتراك بالقناه اولا \n  ♲ اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
 database:sadd(bot_id..'Sudo:User', userid)
 tdcli_function ({ID = "GetUser",user_id_ = userid},function(arg,data) 
 if data.first_name_ then
-usertext = '\n ♲ الـعـضو   ⇇['..data.first_name_..'](t.me/'..(data.username_ or 'textchuser')..')'
+usertext = '\n ♲ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'J_ax_s_o_N')..')'
 status  = '\n ♲ تم ترقيته مطور'
 send(msg.chat_id_, msg.id_, usertext..status)
 else
-usertext = '\n ♲ الـعـضو   ⇇'..userid..''
+usertext = '\n ♲ العضو » '..userid..''
 status  = '\n ♲ تم ترقيته مطور'
 send(msg.chat_id_, msg.id_, usertext..status)
 end;end,nil)
@@ -1806,14 +1806,14 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,' ♲ لا تستطيع استخدام البوت \n ♲  يرجى الاشتراك بالقناه اولا \n ♲  اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,' ♲ لا تستطيع استخدام البوت \n  ♲ يرجى الاشتراك بالقناه اولا \n  ♲ اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
 function start_function(extra, result, success)
 if result.id_ then
 database:srem(bot_id..'Sudo:User', result.id_)
-usertext = '\n ♲ الـعـضو   ⇇['..result.title_..'](t.me/'..(username or 'textchuser')..')'
+usertext = '\n ♲ العضو » ['..result.title_..'](t.me/'..(username or 'J_ax_s_o_N')..')'
 status  = '\n ♲ تم تنزيله من المطورين'
 texts = usertext..status
 else
@@ -1831,18 +1831,18 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,' ♲ لا تستطيع استخدام البوت \n ♲  يرجى الاشتراك بالقناه اولا \n ♲  اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,' ♲ لا تستطيع استخدام البوت \n  ♲ يرجى الاشتراك بالقناه اولا \n  ♲ اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
 database:srem(bot_id..'Sudo:User', userid)
 tdcli_function ({ID = "GetUser",user_id_ = userid},function(arg,data) 
 if data.first_name_ then
-usertext = '\n ♲ الـعـضو   ⇇['..data.first_name_..'](t.me/'..(data.username_ or 'textchuser')..')'
+usertext = '\n ♲ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'J_ax_s_o_N')..')'
 status  = '\n ♲ تم تنزيله من المطورين'
 send(msg.chat_id_, msg.id_, usertext..status)
 else
-usertext = '\n ♲ الـعـضو   ⇇'..userid..''
+usertext = '\n ♲ العضو » '..userid..''
 status  = '\n ♲ تم تنزيله من المطورين'
 send(msg.chat_id_, msg.id_, usertext..status)
 end;end,nil)
@@ -3231,7 +3231,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = ' ❨♲•𓆩| ıl★`𝐉. 𝐀. 𝐗. 𝐒. 𝐎. 𝐍´★lı |𓆪•♲❩',url="https://t.me/j_1x_q"}},
+{{text = ' ❨♲•𓆩| ıl♲`𝐉. 𝐀. 𝐗. 𝐒. 𝐎. 𝐍´♲lı |𓆪•♲❩',url="https://t.me/j_1x_q"}},
 {{text = '《♲ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐎𝐋𝐈𝐕𝐄𝐑♲》',url="t.me/J_ax_s_o_N"}},
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
@@ -3311,7 +3311,7 @@ ght = math.random(1,62);
 local Text ='تم اختيار الاستوري هذه لك' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = ' ❨♲•𓆩| ıl★`𝐉. 𝐀. 𝐗. 𝐒. 𝐎. 𝐍´★lı |𓆪•♲',url="https://t.me/j_1x_q"}},
+{{text = ' ❨♲•𓆩| ıl♲`𝐉. 𝐀. 𝐗. 𝐒. 𝐎. 𝐍´♲lı |𓆪•♲',url="https://t.me/j_1x_q"}},
 {{text = '《♲ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐎𝐋𝐈𝐕𝐄𝐑♲》',url="t.me/J_ax_s_o_N"}},
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 } 
@@ -3324,7 +3324,7 @@ ght = math.random(1,3);
 local Text ='تم اختيار تصميم من تصميمات  اوليفر هذه لك' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '❨  ♲•𓆩| ıl★`𝐉. 𝐀. 𝐗. 𝐒. 𝐎. 𝐍´★lı |𓆪•♲ ❩', url="https://t.me/j_1x_q"}},
+{{text = '❨  ♲•𓆩| ıl♲`𝐉. 𝐀. 𝐗. 𝐒. 𝐎. 𝐍´♲lı |𓆪•♲ ❩', url="https://t.me/j_1x_q"}},
 {{text = '《♲ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐎𝐋𝐈𝐕𝐄𝐑♲》',url="t.me/J_ax_s_o_N"}},
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 } 
@@ -3337,7 +3337,7 @@ ght = math.random(1,31);
 local Text ='تم اختيار فيديو مثالي لك وسيتم التغير عشوائي عند كتب غنيلي بفيديو 🙂♥️' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '❨  ♲•𓆩| ıl★`𝐉. 𝐀. 𝐗. 𝐒. 𝐎. 𝐍´★lı |𓆪•♲ ❩', url="https://t.me/j_1x_q"}},
+{{text = '❨  ♲•𓆩| ıl♲`𝐉. 𝐀. 𝐗. 𝐒. 𝐎. 𝐍´♲lı |𓆪•♲ ❩', url="https://t.me/j_1x_q"}},
 {{text = '《♲ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐎𝐋𝐈𝐕𝐄𝐑♲》',url="t.me/J_ax_s_o_N"}},
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 } 
@@ -4213,7 +4213,7 @@ local Text = [[
 ]]
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '❨  ♲•𓆩| ıl★`𝐉. 𝐀. 𝐗. 𝐒. 𝐎. 𝐍´★lı |𓆪•♲ ❩', url="https://t.me/j_1x_q"}},
+{{text = '❨  ♲•𓆩| ıl♲`𝐉. 𝐀. 𝐗. 𝐒. 𝐎. 𝐍´♲lı |𓆪•♲ ❩', url="https://t.me/j_1x_q"}},
 {{text = '❨  ♲• ⁽𝐎𝐋𝐈𝐕𝐄𝐑₎ •♲ ❩', url="t.me/J_ax_s_o_N"}},
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 } 
@@ -11497,7 +11497,7 @@ if result.members_[i].status_.ID == "ChatMemberStatusMember" then
 tr = ''
 elseif result.members_[i].status_.ID == "ChatMemberStatusEditor" then  
 t = t + 1
-tr = ' {★}'
+tr = ' {♲}'
 end
 text = text..">> [@"..ta.username_..']'..tr.."\n"
 if #admins == 0 then
@@ -12924,7 +12924,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '❨  ♲• ⁽♲ 𓆩| ıl★`𝐉. 𝐀. 𝐗. 𝐒. 𝐎. 𝐍´★lı |𓆪 𖣌♲₎ •♲ ❩', url="https://t.me/j_1x_q"}},
+{{text = '❨  ♲• ⁽♲ 𓆩| ıl♲`𝐉. 𝐀. 𝐗. 𝐒. 𝐎. 𝐍´♲lı |𓆪 𖣌♲₎ •♲ ❩', url="https://t.me/j_1x_q"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendsticker?chat_id=' .. msg.chat_id_ .. '&sticker=https://t.me/J_ax_s_o_N/72/14&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -14997,7 +14997,7 @@ local List = {
 ➭- 𝒊𝒅 𓂅 #id 𓍯. 💕
 ]],
 [[
-⚕ 𓆰 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝑻𝒐 𝑮𝒓𝒐𝒖𝒑 ★
+⚕ 𓆰 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝑻𝒐 𝑮𝒓𝒐𝒖𝒑 ♲
 • 🖤 | 𝑼𝑬𝑺 : #username ‌‌‏⚚
 • 🖤 | 𝑺𝑻𝑨 : #stast 🧙🏻‍♂ ☥
 • 🖤 | 𝑰𝑫 : #id ‌‌‏♕
@@ -15416,7 +15416,7 @@ local List = {
 ┇𝗖𝗛 - ↝@J_ax_s_o_N↜ ♲.
 ]],
 [[
-⚕ 𓆰 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝑻𝒐 ★
+⚕ 𓆰 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝑻𝒐 ♲
 • 🖤 | 𝑼𝑬𝑺 : #username ‌‌‏⚚
 • 🖤 | 𝑺𝑻𝑨 : #stast 🧙🏻‍♂ ☥
 • 🖤 | 𝑰𝑫 : #id ‌‌‏♕
