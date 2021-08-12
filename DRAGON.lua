@@ -1301,7 +1301,7 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/OL_IV_ER1/83/2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
-if text == 'قسم مطورين السورس والمبرمجين' and DevSoFi(msg) then 
+if text == 'قسم مبرمجين السورس' and DevSoFi(msg) then 
 local Text = 'قسم مطورين السورس لدخول الي حسابتهم'
 local Key = {
 {'⚝--------〈ΌᏞᎥᏙᎬᎡ〉-------⚝'},
@@ -1310,7 +1310,7 @@ local Key = {
 }
 send_inline_key(msg.chat_id_,Text,Key)
 end 
-if text == 'قـسم مـسح&اضـف' and DevSoFi(msg) then 
+if text == 'قـسم مسح☀اضـف' and DevSoFi(msg) then 
 local Text = 'قسم مسح واضف مثلا اضف رد عام مسح رد عام'
 local Key = {
 {'اضف رد عام','مسح رد عام'},
@@ -1322,7 +1322,7 @@ local Key = {
 }
 send_inline_key(msg.chat_id_,Text,Key)
 end 
-if text == 'قـسم تـفعيل&تـعطيل' and DevSoFi(msg) then 
+if text == 'قـسم تـفعيل☀تعطيل' and DevSoFi(msg) then 
 local Text = 'قسم التفعيل والتعطيل لتفعيل كل شئ في البوت'
 local Key = {
 {'تعطيل الاذاعه','تفعيل الاذاعه'},
@@ -4469,7 +4469,7 @@ https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. ms
 end
 if text == "لو خيروك بالصور" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(28,56); 
-local Text ='تم اختيار المقطع لو خيروك لك❂'
+local Text ='تم اختيار المقطع لو خيروك لك ❂'
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = 'اضف البوت لمجموعتك', url="http://t.me/"..sudos.UserName.."?startgroup=new"}},
