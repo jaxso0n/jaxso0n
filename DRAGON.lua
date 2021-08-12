@@ -3231,7 +3231,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = ' ❨⚝•𓆩| ıl⚝`𝐉. 𝐀. 𝐗. 𝐒. 𝐎. 𝐍´⚝lı |𓆪•⚝❩',url="https://t.me/J_X_S1"}},
+{{text = '•𓆩| ıl⚝`𝐉. 𝐀. 𝐗. 𝐒. 𝐎. 𝐍´⚝lı |𓆪•',url="https://t.me/J_X_S1"}},
 {{text = '《⚝ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐎𝐋𝐈𝐕𝐄𝐑⚝》',url="t.me/OL_IV_ER1"}},
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
@@ -3245,7 +3245,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = ' ❨⚝• ⁽⚝ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌⚝₎ •⚝',url="t.me/hr_ba_1"}},
+{{text = ' 𓌹 ˹ＨＡＲＶＥＹ¹˼ 𓌺',url="t.me/hr_ba_1"}},
 {{text = '《⚝ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐎𝐋𝐈𝐕𝐄𝐑⚝》',url="t.me/OL_IV_ER1"}},
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
