@@ -3245,12 +3245,12 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = ' ❨⚝• ⁽⚝ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌⚝₎ •⚝',url="t.me/@hr_ba_1"}},
+{{text = ' ❨⚝• ⁽⚝ D𝙴𝚅𝙴𝙻𝙾𝙿𝙴𝚁 𖣌⚝₎ •⚝',url="t.me/hr_ba_1"}},
 {{text = '《⚝ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐎𝐋𝐈𝐕𝐄𝐑⚝》',url="t.me/OL_IV_ER1"}},
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/J_X_S1&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/hr_ba_1&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 if text == 'يوتيوب' or text == 'بحث' or text == 'اليوتيوب' then
@@ -12085,7 +12085,7 @@ local msg_id = msg.id_/2097152/0.5
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '❤️🌝الـمـطـور', url="http://t.me/"..sudos.UserName},
+{text = 'الـمـطـور❤️🌝', url="http://t.me/"..sudos.UserName},
 },
 {
 {text = 'اضف البوت الي مجموعتك 🐼🤍' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
