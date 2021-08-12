@@ -1072,12 +1072,12 @@ end
 if DevSoFi(msg) then
 local bl = '◉ مرحبا بك في اوامر المطور الجاهزه \n◉ [قناة السورس](t.me/OL_IV_ER1)'
 local keyboard = {
-{'ضع اسم البوت','معلومات الكيبورد'},
-{'المطور','الاحصائيات'},
+{'معلومات الكيبورد','ضع اسم البوت'},
+{'الاحصائيات','المطور'},
 {'⚝--------〈ΌᏞᎥᏙᎬᎡ〉-------⚝'},
-{'قسم مطورين السورس والمبرمجين','قـسم مـسح&اضـف'},
+{'قسم مبرمجين السورس','قـسم مـسح☀اضـف'},
 {'قـسم الاشـتراك'},
-{'قـسم تـفعيل&تـعطيل','قـسم الـحمايه'},
+{'قـسم تـفعيل☀تـعطيل','قـسم الـحمايه'},
 {'قـسم الاذاعـه'},
 {'⚝--------〈ΌᏞᎥᏙᎬᎡ〉-------⚝'},
 {'جلب المشتركين','جلب النسخه'},
@@ -1432,17 +1432,17 @@ database:del(bot_id..'Srt:Bot')
 send(msg.chat_id_, msg.id_,' ⚝ اصدار سورس  اوليفر{ 3x☆}')
 end
 
-if text == '━┅┅┄⟞⟦ مطور السورس ⟧⟝┄┉┉━' then
+if text == '⚝--------〈مبرمج السورس〉-------⚝' then
 local Text = [[ 
 معرف مطور  السورس 💕⚝.
 محتاج تنصب بوت ببلاش تواصل معان 🏴‍☠️⬇️.
 ]]
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = 'مطور السورس☎️', url="https://t.me/J_X_S1"}}, 
+{{text = 'مبرمج السورس☎️', url="https://t.me/J_X_S1"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/J_X_S1&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/OL_IV_ER1/244&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == '⚝--------〈ΌᏞᎥᏙᎬᎡ〉-------⚝' and DevSoFi(msg) then
@@ -4468,14 +4468,14 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/wffhvv/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == "لو خيروك بالصور" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
-ght = math.random(1,24); 
-local Text ='مرحبا اليك لو خيروك بالصوره◉'
+ght = math.random(28,56); 
+local Text ='تم اختيار المقطع لو خيروك لك'⇈
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = 'اضف البوت لمجموعتك', url="http://t.me/"..sudos.UserName.."?startgroup=new"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/bebo44y/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/koko12300/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == "حروف بالصور" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(1,15); 
