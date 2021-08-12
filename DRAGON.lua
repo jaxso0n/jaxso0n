@@ -4469,7 +4469,7 @@ https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. ms
 end
 if text == "لو خيروك بالصور" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(28,56); 
-local Text ='تم اختيار المقطع لو خيروك لك'⇈
+local Text ='تم اختيار المقطع لو خيروك لك'
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = 'اضف البوت لمجموعتك', url="http://t.me/"..sudos.UserName.."?startgroup=new"}},
