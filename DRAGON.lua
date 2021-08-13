@@ -3239,13 +3239,15 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/J_X_S1&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
-if text == 'هارفي'  then
+if text == 'هارفي' or text == 'هاارفي' or text == 'مطور السورس'  then
 local Text = [[
 هارفي مبرمج سورس اوليفر للتواصل معه اتبع الزر الاسفل ⬇️💕.
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = ' 𓌹 ˹ＨＡＲＶＥＹ¹˼ 𓌺',url="t.me/hr_ba_1"}},
+{{text = '〈 ՏΌႮᎡᏟᎬ ΌᏞᎥᏙᎬᎡ 〉',url="t.me/OL_IV_ER1"}},
+{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/hr_ba_1&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -15664,7 +15666,7 @@ Msᴀɢ ~ #msgs
 ]],
 [[
 ┄─━━𖦹━━─┄
-𖣰𖡻 𖡋𝗜𝗗• #id •𓀎
+𖣰𖡻 ??𝗜𝗗• #id •𓀎
 𖣰𖡻 𖡋𝗨𝗦𝗘• #username •𓀎
 𖣰𖡻 𖡋𝗦𝗧𝗔• #stast •𓀎
 𖣰𖡻 𖡋𝗠𝗦𝗚• #msgs •𓀎
@@ -15674,7 +15676,7 @@ Msᴀɢ ~ #msgs
 𝗖𝗛 - ↝@OL_IV_ER1↜  𖦹 .
 ]],
 [[
-⚝ |↶ #id    ꙰??🇬.
+⚝ |↶ #id    ꙰🇪🇬.
 ⚝ |↶ #username    ꙰🇪🇬.
 ⚝ |↶ #msgs    ꙰🇪🇬.
 ⚝ |↶ #stast    ꙰🇪🇬.
