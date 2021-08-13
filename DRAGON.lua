@@ -3245,8 +3245,8 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = ' 𓌹 ˹ＨＡＲＶＥＹ¹˼ 𓌺',url="t.me/hr_ba_1"}},
-{{text = '〈 ՏΌႮᎡᏟᎬ ΌᏞᎥᏙᎬᎡ 〉',url="t.me/OL_IV_ER1"}},
+{{text = ' 𓌹 ˹ＨＡＲＶＥＹ¹˼ 𓌺 ',url="https://t.me/hr_ba_1"}},
+{{text = ' 〈 ՏΌႮᎡᏟᎬ ΌᏞᎥᏙᎬᎡ 〉 ',url="https://t.me/OL_IV_ER1"}},
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
@@ -3311,7 +3311,7 @@ ght = math.random(1,62);
 local Text ='تم اختيار الاستوري هذه لك' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = ' ❨⚝•𓆩| ıl⚝`𝐉. 𝐀. 𝐗. 𝐒. 𝐎. 𝐍´⚝lı |𓆪•⚝',url="https://t.me/j_1x_q"}},
+{{text = ' ❨⚝•𓆩| ıl⚝`𝐉. 𝐀. 𝐗. 𝐒. 𝐎. 𝐍´⚝lı |??•⚝',url="https://t.me/j_1x_q"}},
 {{text = '〈 ՏΌႮᎡᏟᎬ ΌᏞᎥᏙᎬᎡ 〉',url="t.me/OL_IV_ER1"}},
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 } 
@@ -16102,7 +16102,7 @@ Msᴀɢ ~ #msgs
 [[
 ⭐️𝖘𝖙𝖆 : #stast ـ🍭
 ⭐️𝖚𝖘𝖊𝖗𝖓𝖆𝖒𝖊 : #username ـ🍭
-⭐️𝖒𝖘𝖌𝖘 : #msgs ـ🍭
+⭐️𝖒𝖘𝖌𝖘 : #msgs ـ??
 ⭐️𝖎𝖉 : #id ـ 🍭
 ⭐️𝗖𝗛 - ↝@OL_IV_ER1↜ ⚝
 ]],
